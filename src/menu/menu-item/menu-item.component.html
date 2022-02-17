@@ -1,0 +1,10 @@
+<div 
+(mouseenter)="showSubMenu()"
+(mouselive)="hideSubMenu()">
+    {{item.title}}
+</div>
+<app-sub-menu
+        *ngIf="item.children && item.isMouseEnter" 
+        [item]="item.children">
+
+</app-sub-menu>

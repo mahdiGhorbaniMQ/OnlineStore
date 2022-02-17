@@ -1,0 +1,11 @@
+<ng-container class="subMenu-container">
+    <div class="subMenu-item" 
+        *ngFor="let subItem of item.children">
+        {{subItem.name}}
+    </div>
+    <ng-container 
+        class="description"
+        *ngIf="item.isMouseEnter">
+        <div class=""></div>
+    </ng-container>
+</ng-container>
